@@ -2,20 +2,22 @@
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <head>Simple Interest Calculator By Patpicha</head>
+    <title>Simple Interest Calculator By Patpicha</title>
     </head>
     <body>
         <div class="maindiv">
-        <h1>Simple Interest Calculator</h1>
+           <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  
-        <br>
-        <br>
-        Interest Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()"><span id="rate_val">10.25</span>  
-        <br>
-        <br>
-        No. of Years 
-        <select id="years">
+           <label for="principal">Amount</label>
+           <input type="number" id="principal">  
+           <br>
+           <br>
+           <label for="rate">Rate</label>
+           <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()"><span id="rate_val">10.25</span>  
+           <br>
+           <br>
+           <label for="years">No. of Years</label> 
+           <select id="years">
             <!-- fill in values 1 to 10 to dropdown box option -->
             <option value="1">1</option>
             <option value="2">2</option>
@@ -27,14 +29,18 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-        </select>
-        <br>
-        <br>
-        <button onclick="compute()">Compute Interest</button>
-        <span id="result"></span>
-        <br>
-        <br>
-        <footer>&#169; 2021 This Calculator belongs to Patphicha</footer>
+           </select>
+           <br>
+           <br>
+           <label for="result">
+           <button onclick="compute()">Compute Interest</button>
+           <br>
+           <br>
+           <span id="result"></span>
+           </label>
+           <br>
+           <br>
+           <footer>&#169; 2021 This Calculator belongs to <a class="link" href="https://github.com/PattyCutie/vftvk-Simple-Interest-Calculator.git">Patpicha</a></footer>
         </div>
     </body>
 </html>

@@ -13,7 +13,7 @@ function compute()
     //conditional validation check.
     if (principal < 1) {
         alert("Enter a positive number");
-        principal.focus();
+         document.getElementById("principal").focus();
         
     }
       

@@ -12,9 +12,33 @@ h1 {
 .maindiv {
     background-color: white;
     color: black;
-    width: 300px;
+    width: 500px;
     padding: 20px;
     border-radius: 25px;
     align: center;
+    margin: auto;
 }
 
+label {
+    display: inline-block;
+    width: 130px;
+    padding: 0px 10px 0px 20px;
+    margin: 0px 20px 0px 40px;
+    font-size: 16px;
+}
+
+#result {
+    display: inline-block;
+    width: 300px;
+    padding: 0px 10px 0px 0px;
+    margin: auto;
+}
+
+footer {
+    font-size: 18px;
+}
+
+.link {
+    color: black;
+    font-weight: bold;
+}
