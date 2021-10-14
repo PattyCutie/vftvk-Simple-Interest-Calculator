@@ -6,15 +6,24 @@ function compute()
     var years = document.getElementById("years").value;
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years); // year in the future.
-    
-    // Get reference to element "result".
-    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>.\<br\>You will receive an amount of <mark>"+interest+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>"
-    
-    //conditional validation check.
+      
+    //conditional validation check alert box and focus input field.
     if (principal < 1) {
         alert("Enter a positive number");
-         document.getElementById("principal").focus();
-        
+        document.getElementById("principal").focus();
+        document.getElementById("result").innerHTML=""
+        // Get reference to element "result" after click compute function. 
+    }
+    else if (principal == "") {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+        document.getElementById("result").innerHTML=""
+        // Get reference to element "result" after click compute function. 
+    }
+    else {
+        document.getElementById("principal").focus();
+        document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>.\<br\>You will receive an amount of <mark>"+interest+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>"
+        // Get reference to element "result" after click compute function.
     }
       
 }
