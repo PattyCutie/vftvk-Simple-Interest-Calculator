@@ -27,7 +27,7 @@ function compute()
     }
       
 }
-// fucntion reads the value of the range slider.
+// fucntion reads the value of the range slider by input.
 function updateRate() {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
