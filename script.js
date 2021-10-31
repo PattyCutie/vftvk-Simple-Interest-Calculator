@@ -8,7 +8,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years); // year in the future.
       
     //conditional validation check alert box and focus input field.
-    if (principal < 1) {
+    if (principal >= 1) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         document.getElementById("result").innerHTML=""
